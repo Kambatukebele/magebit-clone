@@ -3,9 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <!-- Inter google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Inter google font -->
+    <title>Magebit: Full-service e-commerce agency</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header class="w-full bg-gray-100 h-fit py-6 relative @container lg:py-0">
+      <div class="px-4 @lg:w-[1280px] mx-auto sm:px-8 relative lg:h-screen">
+        <nav
+          class="w-full flex justify-between items-center py-2 mb-10 lg:mb-0 lg:py-12"
+        >
+          <a href="/" class="block w-24">
+            <img
+              class="block w-full h-fit object-center object-cover"
+              src="./src/svg/magebit_logo.svg"
+              alt="Magebit logo"
+            />
+          </a>
+          <!-- Open and close menu -->
+          <div class="flex justify-between items-center lg:hidden">
+            <span id="hamburger_menu" class="block w-6">
+              <img
+                class="block w-full h-full object-center object-cover"
+                src="./src/svg/hamburger_menu.svg"
+                alt="Hamburger menu"
+              />
+            </span>
+            <span id="close_menu" class="hidden w-6">
+              <img
+                class="block w-full h-full object-center object-cover"
+                src="./src/svg/clone_menu.svg"
+                alt="Close menu"
+              />
+            </span>
+          </div>
+          <!-- End Open and close menu -->
+          <ul
+            id="navigation"
+            class="absolute bg-gray-100 z-20 w-full h-screen top-12 -left-[100%] duration-700 ease-in-out gap-8 px-10 py-10 flex flex-col justify-start items-start lg:static lg:top-0 lg:left-0 lg:h-fit lg:w-fit lg:py-0 lg:px-0 lg:bg-transparent lg:justify-center lg:items-center lg:z-0 lg:flex-row lg:gap-12"
+          >
+            <li
+              class="text-base text-gray-700 font-medium hover:text-blue-600 transition-all duration-300"
+            >
+              <a href="">Services</a>
+            </li>
+            <li
+              class="text-base text-gray-700 font-medium hover:text-blue-600 transition-all duration-300"
+            >
+              <a href="">Work</a>
+            </li>
+            <li
+              class="text-base text-gray-700 font-medium hover:text-blue-600 transition-all duration-300"
+            >
+              <a href="">About</a>
+            </li>
+            <li
+              class="text-base text-gray-700 font-medium hover:text-blue-600 transition-all duration-300"
+            >
+              <a href="">Blog</a>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="hidden lg:py-3 lg:px-6 lg:bg-blue-950 lg:text-white lg:rounded-4xl lg:flex justify-center items-center gap-2 lg:hover:bg-blue-600 transition-all duration-300"
+            >Contact us</a
+          >
+        </nav>
+        <div
+          class="py-6 lg:flex lg:py-0 lg:absolute lg:w-full lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:px-8"
+        >
+          <div
+            class="w-full mb-10 flex flex-col justify-between items-start gap-4 lg:mb-0 lg:gap-4 lg:justify-center"
+          >
+            <div class="flex justify-center flex-col items-start">
+              <h1 class="text-5xl font-normal text-blue-950 lg:text-7xl">
+                We'll help you <br />
+                succeed in
+              </h1>
+              <div class="flex justify-starts items-center gap-4">
+                <img src="./src/svg/magebit.svg" alt="magebit icon" />
+                <span class="text-5xl font-normal text-blue-600 lg:text-7xl"
+                  >eCommerce</span
+                >
+              </div>
+            </div>
+            <p class="text-base font-normal text-gray-700 lg:text-lg">
+              We’re determined to make a business successful. <br />
+              Will it be yours?
+            </p>
+            <a
+              class="bg-blue-600 text-white w-full py-3 px-6 rounded-4xl flex justify-center items-center gap-2 hover:bg-blue-950 transition-all duration-300 lg:w-fit"
+              href="#"
+            >
+              <span class="text-base font-medium lg:text-lg"
+                >Let’s see if we’re a good fit</span
+              >
+              <img src="./src/svg/arrow.svg" alt="arrow" />
+            </a>
+          </div>
+          <div
+            class="w-full flex flex-col justify-center items-center gap-4 py-4"
+          >
+            <div
+              class="border border-gray-100 bg-white h-64 flex justify-center items-center sm:w-[518px] sm:rotate-3 sm:shadow-2xl"
+            >
+              <div
+                class="flex justify-start w-full h-full items-start gap-4 py-3"
+              >
+                <img
+                  class="block w-[30%] h-full object-center object-cover"
+                  src="./src/images/photo_1.avif"
+                  alt="Photo review"
+                />
+                <div
+                  class="w-[70%] flex flex-col justify-start items-start gap-4"
+                >
+                  <img
+                    class="w-28"
+                    src="./src/svg/review.svg"
+                    alt="Review image"
+                  />
+                  <p class="text-base font-normal text-gray-700">
+                    Magebit does an excellent job covering every one of our
+                    needs.
+                  </p>
+                  <div>
+                    <div class="flex flex-col justify-start items-start gap-2">
+                      <span class="block text-base font-semibold text-gray-600"
+                        >Daniel Eisen</span
+                      >
+                      <span class="block text-base font-light text-gray-600">
+                        CEO of Vita Juwel</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        class="w-24 object-center object-cover"
+                        src="./src/images/logo_photo_1.avif"
+                        alt="Logo photo one"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border border-gray-100 h-64 flex justify-center items-center sm:w-[518px] -sm:rotate-3 sm:shadow-2xl"
+            >
+              <div
+                class="flex justify-start w-full h-full items-start gap-4 py-3 flex-row-reverse px-2"
+              >
+                <img
+                  class="block w-[30%] h-full object-center object-cover"
+                  src="./src/images/photo_2.avif"
+                  alt="Photo review"
+                />
+                <div
+                  class="w-[70%] flex flex-col justify-start items-start gap-4"
+                >
+                  <img
+                    class="w-28"
+                    src="./src/svg/review.svg"
+                    alt="Review image"
+                  />
+                  <p class="text-base font-normal text-gray-700">
+                    There is no challenge for which they can’t find a solution.
+                  </p>
+                  <div>
+                    <div class="flex flex-col justify-start items-start gap-2">
+                      <span class="block text-base font-semibold text-gray-600"
+                        >Will Aubuchon</span
+                      >
+                      <span class="block text-base font-light text-gray-600">
+                        CEO of Aubuchon Company</span
+                      >
+                    </div>
+                    <div>
+                      <img
+                        class="w-24 object-center object-cover"
+                        src="./src/svg/logo_photo_2.svg"
+                        alt="Logo photo one"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Technologie -->
+    <section class="w-full bg-gray-100 h-fit py-6 relative @container">
+      <div
+        class="px-4 @lg:w-[1280px] flex flex-col justify-start items-start gap-16 mx-auto sm:px-8"
+      >
+        <div class="">
+          <h4 class="text-xs font-normal text-gray-700 uppercase">
+            Technology stack
+          </h4>
+        </div>
+        <div
+          class="px-4 mx-auto w-full grid grid-cols-4 gap-10 place-items-center lg:grid-cols-8"
+        >
+          <img
+            class="w-20"
+            src="./src/svg/shopifyplus.svg"
+            alt="Shopify plus logo"
+          />
+          <img class="w-20" src="./src/svg/hyva.svg" alt="Hyva logo" />
+          <img class="w-20" src="./src/svg/adobe.svg" alt="Adobe logo" />
+          <img class="w-20" src="./src/svg/aws.svg" alt="AWS logo" />
+          <img
+            class="w-20"
+            src="./src/images/dynamics365.avif"
+            alt="Dynamics logo"
+          />
+          <img
+            class="w-20"
+            src="./src/svg/oracle-netsuite.svg"
+            alt="Oracle logo"
+          />
+          <img class="w-20" src="./src/svg/akeneo-logo.svg" alt="Akeneo logo" />
+          <img class="w-20" src="./src/svg/openai.svg" alt="Open AI logo" />
+        </div>
+      </div>
+    </section>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
