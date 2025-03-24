@@ -13,9 +13,11 @@
   --primary--neon-red: "#fc3e00";
   --primary--emerald: "#00c864";
   --primary--sky-blue: "#78e1ff";
-  /* ... */
 }
 /* @utility container {
   margin-inline: auto;
   padding-inline: 2rem;
 } */
+body {
+  font-family: "Inter", sans-serif;
+}
